@@ -1,87 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Grid Layout Demo</title>
-<style>
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
-    grid-template-rows: 100px 120px 120px 120px 100px;
-    gap: 10px;
-    background-color: white;
-    padding: 10px;
+body{
+    margin:0;
+    background:white;
+    font-family: serif;
 }
 
-.box {
-    background-color: green;
-    color: white;
-    font-size: 30px;
-    padding: 10px;
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 200px 200px 200px 120px;
+    gap:10px;
+    padding:10px;
+}
+
+.box{
+    background:#3b7d23;
+    color:white;
+    font-size:50px;
+    padding:10px;
 }
 
 /* Grid positioning */
 
-.box1 {
-    grid-column: 1 / 5;
+.box1{
+    grid-column:1 / 5;
 }
 
-.box2 {
-    grid-row: 2 / 6;
-    grid-column: 1 / 2;
+.box2{
+    grid-row:2 / 6;
+    grid-column:1 / 2;
 }
 
-.box3 {
-    grid-column: 2 / 3;
+.box3{
+    grid-column:2 / 3;
 }
 
-.box4 {
-    grid-column: 3 / 5;
+.box4{
+    grid-column:3 / 5;
 }
 
-.box5 {
-    grid-column: 2 / 4;
+.box5{
+    grid-column:2 / 4;
 }
 
-.box6 {
-    grid-column: 4 / 5;
+.box6{
+    grid-column:4 / 5;
 }
 
-.box7 {
-    grid-column: 2 / 3;
+.box7{
+    grid-column:2 / 3;
 }
 
-.box8 {
-    grid-column: 3 / 4;
+.box8{
+    grid-column:3 / 4;
 }
 
-.box9 {
-    grid-column: 4 / 5;
+.box9{
+    grid-column:4 / 5;
 }
 
-.box10 {
-    grid-column: 2 / 5;
+.box10{
+    grid-column:2 / 5;
 }
 
-</style>
-</head>
-<body>
-
-<div class="container">
-
-    <div class="box box1">1</div>
-    <div class="box box2">2</div>
-    <div class="box box3">3</div>
-    <div class="box box4">4</div>
-    <div class="box box5">5</div>
-    <div class="box box6">6</div>
-    <div class="box box7">7</div>
-    <div class="box box8">8</div>
-    <div class="box box9">9</div>
-    <div class="box box10">10</div>
-
-</div>
-
-</body>
-</html>
